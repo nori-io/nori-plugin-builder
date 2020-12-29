@@ -7,4 +7,5 @@ echo GO:
 echo $(go env)
 go get -v -t -d ./...
 go test -v ./...
-go build --buildmode=plugin -o plugin.so ./plugin/main.go
+$(cd plugin)
+go build --buildmode=plugin -o plugin.so main.go
