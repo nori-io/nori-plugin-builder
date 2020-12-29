@@ -1,6 +1,6 @@
 #!/bin/bash
 echo here are the list of files
-ls
+$ pwd
 go get -v -t -d ./...
 go test -v ./...
 go build --buildmode=plugin -o plugin.so ./plugin/main.go
