@@ -6,4 +6,5 @@ runs:
   steps: 
     - run: sh ${{ github.action_path }}/script.sh
       shell: bash
-    - run: ls -R  
+    - run: ls -R
+      shell: bash
