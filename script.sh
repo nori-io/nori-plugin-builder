@@ -1,6 +1,7 @@
 #!/bin/bash
 echo PWD:
 echo $PWD
+echo LS:
 echo ($(ls -l))
 go get -v -t -d ./...
 go test -v ./...
