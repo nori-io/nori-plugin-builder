@@ -1,4 +1,5 @@
 #!/bin/bash
 go get -v -t -d ./...
 go test -v ./...
-go build --buildmode=plugin -o plugin.so /plugin/main.go
+ls -R
+go build --buildmode=plugin -o plugin.so ./plugin/main.go
