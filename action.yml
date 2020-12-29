@@ -1,8 +1,6 @@
 name: 'Build Nori Plugin'
 description: 'Build Nori plugin'
 author: 'Nori'
-inputs:
-outputs:
 runs:
   using: "composite"
   steps: 
