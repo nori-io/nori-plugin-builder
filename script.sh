@@ -11,7 +11,6 @@ go get -v -t -d ./...
 #go clean ./...
 echo CD_PLUGIN:
 #$ cd plugin
-echo go list -m 
-go list -m 
+echo $(go list -m)
 echo BUILD:
 GO111MODULE='on' go build -v --buildmode=plugin -o 'plugin.so' './plugin/main.go'
