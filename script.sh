@@ -13,6 +13,7 @@ echo GO_GET:
 #(cd plugin)
 echo GO_LIST_M:
 echo $(go list -m)
-echo BUILD:
+echo GO_MOD_TIDY:
 $(go mod tidy)
+echo BUILD:
 $(GO111MODULE="on" go build -buildmode=plugin main)
