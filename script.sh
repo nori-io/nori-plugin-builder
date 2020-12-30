@@ -16,6 +16,6 @@ echo $(go list -m)
 echo GO_MOD_TIDY:
 $(go mod tidy)
 echo SET_ENV_GO111MODULE:
-export GO111MODULE=on
+set GO111MODULE=on
 echo BUILD:
 $(go build -buildmode=plugin main)
