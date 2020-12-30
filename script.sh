@@ -14,6 +14,6 @@ echo GO_GET:
 echo GO_LIST_M:
 echo $(go list -m)
 echo BUILD:
-go mod init
-go mod tidy
+$(go mod init)
+$(go mod tidy)
 GO111MODULE="on" go build -buildmode=plugin main
