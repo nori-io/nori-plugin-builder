@@ -13,4 +13,4 @@ go get -v -t -d ./...
 #(cd plugin)
 echo $(go list -m)
 echo BUILD:
-$(go build -v --buildmode=plugin -o plugin.so ./plugin/main.go)
+$(go build -buildmode=plugin -o plugin.so ./plugin/main.go)
