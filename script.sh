@@ -1,4 +1,15 @@
 #!/bin/bash
+echo PWD:
+echo $PWD
+echo LS:
+echo $(ls -R)
+echo GO_ENV:
+echo $(go env)
+echo GO_GET:
 go get -v -t -d ./...
 go test -v ./...
-go build --buildmode=plugin -o plugin.so ./plugin/main.go
+go clean ./...
+echo GO_LIST_M:
+echo $(go list -m)
+echo BUILD:
+GO111module="on" go build --buildmode=plugin -o plugin.so ./plugin/main.go
