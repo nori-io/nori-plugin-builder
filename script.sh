@@ -18,4 +18,4 @@
 #echo SET_ENV_GO111MODULE:
 #set GO111MODULE=on
 #echo BUILD:
-$(GOROOT="" go build -buildmode=plugin main)
+$(GOROOT= go build -buildmode=plugin main)
