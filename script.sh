@@ -14,4 +14,4 @@ $(go get -v -t -d ./...)
 echo GO_LIST_M:
 echo $(go list -m)
 echo BUILD:
-$(go build -buildmode=plugin -o plugin.so main.go)
+$(go build -buildmode=plugin main.go)
