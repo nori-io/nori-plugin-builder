@@ -1,6 +1,11 @@
 name: 'Build Nori Plugin'
 description: 'Build Nori plugin'
 author: 'Nori'
+inputs:
+  pluginName:
+    description: 'name of plugin'
+    required: false
+    default: 'plugin'
 runs:
   using: "composite"
   steps: 
