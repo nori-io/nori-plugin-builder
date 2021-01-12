@@ -18,5 +18,5 @@ echo GO_LIST_M:
 echo $(go list -m)
 echo BUILD:
 GO111module="on" go build --buildmode=plugin -o ${INPUT_PLUGIN_NAME}.so ./plugin/main.go
-echo GO_LIST_M_AFTER_BUILD:
-echo $(go list -m)
+echo LS_AFTER_BUILD:
+echo $(ls -R)
