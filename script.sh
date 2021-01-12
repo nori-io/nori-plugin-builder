@@ -17,6 +17,6 @@ go clean ./...
 echo GO_LIST_M:
 echo $(go list -m)
 echo BUILD:
-GO111module="on" go build --buildmode=plugin -o plugin.so ./plugin/main.go
+GO111module="on" go build --buildmode=plugin -o ${PLUGIN_NAME}.so ./plugin/main.go
 echo LS_AFTER_BUILD:
 echo $(ls -R)
