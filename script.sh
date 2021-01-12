@@ -17,4 +17,4 @@ go clean ./...
 echo GO_LIST_M:
 echo $(go list -m)
 echo BUILD:
-GO111module="on" go build --buildmode=plugin -o plugin.so ./plugin/main.go
+GO111module="on" CGO_ENABLED=0 go build --buildmode=plugin -o plugin.so ./plugin/main.go
