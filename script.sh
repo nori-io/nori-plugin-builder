@@ -1,5 +1,7 @@
 #!/bin/bash
+echo WGET:
 wget -c https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
+echo TAR:
 sudo tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
 export  PATH=$PATH:/usr/local/go/bin
 echo PWD:
