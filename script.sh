@@ -5,7 +5,7 @@ echo TAR:
 sudo tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
 export  PATH=$PATH:/usr/local/go/bin
 echo GCC:
-sudo apt-get install -y gcc-multilib
+sudo apt-get install gcc-multilib g++-multilib
 echo PWD:
 echo $PWD
 echo LS:
@@ -19,4 +19,4 @@ go clean ./...
 echo GO_LIST_M:
 echo $(go list -m)
 echo BUILD:
-GO111module="on"  CGO_ENABLED=1 go build --buildmode=plugin -o plugin.so ./plugin/main.go
+GO111module="on" go build --buildmode=plugin -o plugin.so ./plugin/main.go
