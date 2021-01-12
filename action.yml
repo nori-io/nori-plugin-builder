@@ -13,6 +13,6 @@ runs:
       shell: bash
     - run: sh ${{ github.action_path }}/script.sh
       shell: bash
-      args:
-      - ${{ inputs.pluginName}}
+
+      
 
