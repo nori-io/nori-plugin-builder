@@ -4,8 +4,6 @@ wget -c --no-verbose https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
 echo TAR:
 sudo tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
 export  PATH=$PATH:/usr/local/go/bin
-echo GCC:
-RUN apk update && apk add --no-cache musl-dev gcc build-base
 echo PWD:
 echo $PWD
 echo LS:
